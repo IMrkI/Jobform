@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Application.css">
+  
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="mainbody">
+
+    <form class="row g-3 needs-validation" novalidate>
+      <h2>Job Form Application</h2>
+      <div class="row">
+
+        <div class="col-4 pb-3">
+          <label class="form-label" for="fname"><b>First Name:</b></label>
+          <input class="form-control" id="fname" name="fname" type="text" placeholder="Enter First Name" required>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+
+        <div class="col-4 pb-3">
+          <label class="form-label"> <b>Last Name:</b></label>
+          <input class="form-control" type="text" placeholder="Enter Last Name" required>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+
+        <div class="col-4 pb-3">
+          <label class="form-label"><b>Middle Name:</b></label>
+          <input class="form-control" type="text" placeholder="Enter Middle Name" required>
+          <div class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="Container">
+
+
+          <div class="row">
+            <div class="col-6 pb-3">
+              <label class="form-label"><b>Email:</b></label>
+              <input class="form-control" type="text" placeholder="  Ex:123@gmail.com" required>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-6 pb-3">
+              <label class="form-label"><b>Number:</b></label>
+              <input class="form-control" type="text" placeholder="  ####-####-###-##" required>
+              <div class="invalid-feedback">
+                Please select a valid state.
+              </div>
+
+            </div>
+
+            <div class="Container">
+
+              <div class="row">
+                <div class="col-12 pb-3">
+                  <label id="City"><b>City:</b></label>
+                  <select id="dropdown" style="cursor: pointer;" name="role" required>
+
+                    <option disabled selected value>
+                      Select your City
+                    </option>
+                    <option value="M">
+                      Manila
+                    </option>
+                    <option value="DC">
+                      Davao City
+                    </option>
+                    <option value="CdO">
+                      Cagayan de Oro
+                    </option>
+                    <option value="M">
+                      Makati
+                    </option>
+                    <option value="IC">
+                      Iloilo City
+                    </option>
+                    <option value="M">
+                      Makati
+                    </option>
+                    <option value="C">
+                      Caloocan
+                    </option>
+                    <option value="CC">
+                      Cavite City
+                    </option>
+                    <option value="QC">
+                      Quezon City
+                    </option>
+                    <option value="A">
+                      Antipolo
+                    </option>
+                    <option value="B">
+                      Baguio
+                    </option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <div class="Container">
+
+                  <div class="row">
+                    <div class="col- pb-3">
+                      <label><b>Available Date:</b></label>
+                      <input type="date" required />
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                      <label><b>Availabe Time:</b></label>
+                      <input type="time" required />
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+
+                    <!---Genre-->
+                    <div class="row">
+                      <div class="col-md-6">
+                        <label for="gender"><b>Genre:</b></label> <br>
+
+                        <input type="radio" id="gender1" name="genre" value="Male" required> Male
+                        <br>
+
+                        <input type="radio" id="gender2" name="genre" value="Female"> Female
+                        <br>
+
+                        <input type="radio" id="gender3" name="genre" value="Other"> I prefer not to answer
+
+                        <div class="invalid-feedback">
+                          Please select a valid state.
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <label for="status"><b>What is your current employment status?</b></label>
+                        <br>
+                        <input type="radio" id="status" name="status" value="Employed" required> Employed
+                        <br>
+
+                        <input type="radio" name="genre" value="Self-Employed
+       "> Self-Employed
+                        <br>
+
+                        <input type="radio" name="genre" value="Unemployed
+       "> Unemployed
+                        <br>
+
+                        <input type="radio" name="genre" value="Student
+       "> Student
+                        <div class="invalid-feedback">
+                          Please select a valid state.
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-6 pb-3">
+                          <label class="form-label"><b>Resume File:</b></label>
+                          <input class="form-control" type="file" placeholder="Enter your file here" required>
+                          <div class="invalid-feedback">
+                            Please select a valid state.
+                          </div>
+                        </div>
+                        <div class="col-6 pb-3">
+                          <label class="form-label"><b>URL Link:</b></label>
+                          <input class="form-control" type="link" placeholder="Enter the Link here" required>
+                          <div class="invalid-feedback">
+                            Please select a valid state.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <input type="submit" id="submit" name="submit" value="Submit">
+    </form>
+  </div>
+  <script src="Script.js"></script>
+</body>
+
+</html>
